@@ -4,13 +4,13 @@
     box-sizing: border-box;
   }
 
-  body {
-    font-size: 14px;
-    transition: all 0.3s;
-    line-height: 1.5;
-    color: #7a7e9a;
-    font-family: 'Poppins', sans-serif;
-  }
+body {
+  font-size: 14px;
+  transition: all 0.3s;
+  line-height: 1.5;
+  color: #7a7e9a;
+  font-family: 'Poppins', sans-serif;
+}
 
 a {
     display: inline-block;
