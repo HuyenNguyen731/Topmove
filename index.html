@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topmove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <div class="header-area">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l-3">
+                            <div class="header-logo">
+                                <a href="#">
+                                    <img src="./img/topmove.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-9 m-12">
+                            <div class="header-contact font-1">
+                                <a href="tel:+84389676559">
+                                    <div class="header-contact_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+                                    </div>
+                                    <div class="contact">
+                                        <p>Số điện thoại CSKH</p>
+                                        <span>+84389676559</span>
+                                    </div>
+                                </a>
+
+                                <a href="mailto:contact@topmove.vn">
+                                    <div class="header-contact_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                                    </div>
+                                    <div class="contact">
+                                        <p>Email CSKH</p>
+                                        <span>contact@topmove.vn</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="navbar-area">
+                    menu for mobile device
+                    <div class="mobile-nav">
+                        <div class="mobile-nav_top">
+                            <a href="" class="logo">
+                                <img src="./img/topmove.png" alt="">
+                            </a>
+                            <div class="menu-icon active" id="menu-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" fill="#fa4612"/></svg>
+                            </div>
+                            <div class="meanclose" id="meanclose">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="12px"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="#fa4612"/></svg>
+                            </div>
+                        </div>
+                        <div class="mean-bar">
+                            <nav class="mean-nav">
+                                <ul class="navbar-nav font-1">
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link active">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">Giới thiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">Tra Phí</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="menudrop">
+                                            <a href="" class="nav-link">
+                                                HDSD
+                                            </a>
+                                            <div class="plus-icon active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" fill="#fa4612"/></svg>
+                                            </div>
+                                            <div class="minus-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z" fill="#fa4612"/></svg>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="" class="nav-link">HDSD</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="" class="nav-link">Chính Sách Hợp Tác</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="menudrop">
+                                            <a href="" class="nav-link">
+                                                Thông Tin Hữu Ích
+                                            </a>
+                                            <div class="plus-icon active">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" fill="#fa4612"/></svg>
+                                            </div>
+                                            <div class="minus-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z" fill="#fa4612"/></svg>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="" class="nav-link">Kiến Thức DN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="" class="nav-link">Blog</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">Đăng nhập</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">Đăng ký</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    menu for desktop device 
+                    <div class="main-nav" id="desktop-nav">
+                        <nav class="navbar">
+                            <div class="container">
+                                <div class="navbar-collapse">
+                                    <ul class="navbar-nav font-1">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link active">Trang chủ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Tra Phí</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">
+                                                Hướng Dẫn
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="" class="nav-link">HDSD</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="" class="nav-link">Chính Sách Hợp Tác</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">
+                                                Thông Tin Hữu Ích
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="" class="nav-link">Kiến Thức DN</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="" class="nav-link">Blog</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Đăng nhập</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Đăng ký</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="container">
+                <div class="content-text prevoz-slider-text overflow-hidden one">
+                    <span class="font-2">TOPMOVE.VN</span>
+                    <h1 class="font-2">CÙNG TOPMOVE - GIAO HÀNG TIẾT KIỆM HƠN, TỐI ƯU HƠN</h1>
+                    <p class="font-1">Topmove.vn kết nối các Hãng Vận Chuyển lớn nhất có năng lực vận hành tốt nhất: SuperShip (SUP) - BEST Express (BEV) - Giao Hàng Tiết Kiệm (GHTK) - Giao Hàng Nhanh (GHN). Giúp bạn tối ưu rủi ro và chi phí bằng cách lựa chọn dịch vụ giao hàng phù hợp nhất.</p>
+                    <div class="content-text-btn slider-btn">
+                        <div class="row">
+                            <div class="col l-3"></div>
+                            <div class="col l-6 s-12">
+                                <div class="tracking-body">
+                                  <form action="" class="tracking-wrap" id="tracking_form">
+                                        <input type="text" class="input-tracking font-1" placeholder="Nhập mã đơn hàng..." name="Tracking">
+                                        <button class="default-btn font-1 active">Tra cứu</button>
+                                    </form>  
+                                </div>
+                            </div>
+                            <div class="col l-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="choose-us-area pb-100 mt-3">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-center font-2">Đơn hàng tra cứu</h2>
+                </div>
+                <div class="table">
+                    <div class="row">
+                        <div class="col l-4">
+                            <div class="font-1">Thời gian</div>
+                        </div>
+                        <div class="col l-8">
+                            <div class="font-1">
+                                Nội dung Trạng thái
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="track-area mt-minus-70 pb-100">
+            <div class="container">
+                <div class="col l-12 p-0-s">
+                    <div class="tab quote-list-tab">
+                        <ul class="tabs active">
+                            <li class="current">
+                                <a href="" class="font-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="30px"><path d="M368 0C394.5 0 416 21.49 416 48V96H466.7C483.7 96 499.1 102.7 512 114.7L589.3 192C601.3 204 608 220.3 608 237.3V352C625.7 352 640 366.3 640 384C640 401.7 625.7 416 608 416H576C576 469 533 512 480 512C426.1 512 384 469 384 416H256C256 469 213 512 160 512C106.1 512 64 469 64 416H48C21.49 416 0 394.5 0 368V48C0 21.49 21.49 0 48 0H368zM416 160V256H544V237.3L466.7 160H416zM160 368C133.5 368 112 389.5 112 416C112 442.5 133.5 464 160 464C186.5 464 208 442.5 208 416C208 389.5 186.5 368 160 368zM480 464C506.5 464 528 442.5 528 416C528 389.5 506.5 368 480 368C453.5 368 432 389.5 432 416C432 442.5 453.5 464 480 464z" fill="#fa4612"/></svg>
+                                    Tra cước
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab_content">
+                            <div class="tabs_item">
+                                <form action="" id="look_up">
+                                    <div class="row">
+                                        <div class="col l-5 m-12 border-right">
+                                            <div class="row">
+                                                <div class="col l-12">
+                                                    <h3 class="font-2">Địa chỉ lấy hàng</h3>
+                                                </div>
+                                                <div class="col l-6 s-12">
+                                                    <div class="form-group">
+                                                        <select name="" id="">
+                                                            <option value="0">Tỉnh/Thành...</option>
+                                                            <option value="1">Hà Nội</option>
+                                                            <option value="2">Đà Nẵng</option>
+                                                            <option value="3">HCM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-6 s-12">
+                                                    <div class="form-group">
+                                                        <select name="" id="">
+                                                            <option value="0">Tỉnh/Thành...</option>
+                                                            <option value="1">Hà Nội</option>
+                                                            <option value="2">Đà Nẵng</option>
+                                                            <option value="3">HCM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col l-12">
+                                                    <h3 class="font-2">Địa chỉ nhận hàng</h3>
+                                                </div>
+                                                <div class="col l-6 s-12">
+                                                    <div class="form-group">
+                                                        <select name="" id="">
+                                                            <option value="0">Tỉnh/Thành...</option>
+                                                            <option value="1">Hà Nội</option>
+                                                            <option value="2">Đà Nẵng</option>
+                                                            <option value="3">HCM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-6 s-12">
+                                                    <div class="form-group">
+                                                        <select name="" id="">
+                                                            <option value="0">Tỉnh/Thành...</option>
+                                                            <option value="1">Hà Nội</option>
+                                                            <option value="2">Đà Nẵng</option>
+                                                            <option value="3">HCM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col l-12">
+                                                    <h3 class="font-2">Khối lượng (Gram)</h3>
+                                                </div>
+                                                <div class="col l-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Khối lượng...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col l-12">
+                                                    <button type="submit" class="default-btn">Tra cước</button>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+
+                                        <div class="col l-7 m-12">
+                                            <div class="text-center font-1">
+                                                <strong>ĐÂY LÀ GIÁ CƯỚC RIÊNG </strong>
+                                                <strong>CỦA   Topmove.vn</strong>
+                                            </div>
+                                            <p class="text-center font-1">Vui lòng nhập đầy đủ thông tin để hiển thị thông tin đối tác vận chuyển</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="what-offer-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="font-2">Đối tác của chúng tôi!</h2>
+                </div>
+                <div class="what-offer-area_content">
+                    <div class="row">
+                        <div class="col l-3 m-6 s-12 p-0">
+                            <div class="single-offer">
+                                <p></p>
+                                <img src="./img/logo_sup.png" alt="">
+                                <p></p>
+                                <h3 class="font-2">SuperShip</h3>
+                                <p class="font-1">Biệt đội giao hàng siêu đẳng. Cước phí thấp hơn 20% so với mặt bằng chung</p>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 s-12 p-0">
+                            <div class="single-offer">
+                                <p></p>
+                                <img src="./img/logobest.png" alt="" width="55">
+                                <p></p>
+                                <h3 class="font-2">BEST Express</h3>
+                                <p class="font-1">Tập đoàn BEST Inc là nhà cung cấp dịch vụ Chuỗi cung ứng thông minh hàng đầu và sở hữu tốc độ phát triển mạnh mẽ trên phạm vi toàn cầu.</p>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 s-12 p-0">
+                            <div class="single-offer">
+                                <p></p>
+                                <img src="./img/ghtk_logo.png" alt="">
+                                <p></p>
+                                <h3 class="font-2">Giao Hàng Tiết Kiệm</h3>
+                                <p class="font-1">Mạng lưới chuyển phát hàng nhanh nhất.
+                                    <br />
+                                    500++ điểm gửi hàng trên toàn quốc
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 s-12 p-0">
+                            <div class="single-offer">
+                                <p></p>
+                                <img src="./img/logo_ghn.png" alt="">
+                                <p></p>
+                                <h3 class="font-2">Giao Hàng Nhanh</h3>
+                                <p class="font-1">
+                                    Công ty giao nhận hàng đầu Việt Nam.
+                                    <br/>
+                                    Giao hàng nhanh tỷ lệ hoàn hàng thấp
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="choose-us-area">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="font-2">Tại sao nên chọn chúng tôi?</h2>
+                </div>
+                <div class="row">
+                    <div class="col l-4 m-12 pr-0">
+                        <div class="choose-img choose-img-one">
+                        </div>
+                    </div>
+                    <div class="col l-8 m-12 pl-0">
+                        <div class="choose-tab-wrap">
+                            <div class="tab quote-list-tab choose-tab">
+                                <ul class="tabs active choose-us-area_panel">
+                                    <li class="current font-1 tabs-panel" data-id="commit">
+                                        Không Cần Cam Kết
+                                    </li>
+                                    <li class="font-1 tabs-panel" data-id="risk">
+                                        Rủi Ro Thấp
+                                    </li>
+                                    <li class="font-1 tabs-panel" data-id="rates">
+                                        Giá cước rẻ hơn
+                                    </li>
+                                </ul>
+                                <div class="tab_content">
+                                    <div class="tab_item current" id="commit">
+                                        <p></p>
+                                        <p>TopMove Mong muốn là giải pháp chất lượng & ít rào cản nhất. Kết nối với các đối tác uy tín chất lượng nhất:</p>
+                                        <br>
+                                        <p>⇒ Giá cước luôn rẻ, không cần cam kết số lượng.</p>
+                                        <br>
+                                        <p>⇒ Không cần ký quỹ hoặc thanh toán trước."</p>
+                                    </div>
+                                    <div class="tab_item" id="risk">
+                                        <p>Mỗi Hãng Vận Chuyển đều có ưu - nhược điểm riêng về giá cước, chất lượng dịch vụ. <br><br> Tại TopMove bạn có thể lựa chọn ít rủi ro nhất một cách trực quan nhất cho từng khu vực.</p>
+                                    </div>
+                                    <div class="tab_item" id="rates">
+                                        <p>Thông thường, để có giá cước giao hàng rẻ bạn phải có hàng trăm, hàng ngàn đơn hàng mỗi ngày.<br><br> Nhưng với TopMove, bạn luôn được chính sách giá rẻ mà không cần cam kết.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-area fun-blue-bg ptb-1000">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="font-2">Tại sao nên chọn chúng tôi?</h2>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonials-wrap">
+                                <img src="http://adminsys.topmove.vn/uploads/feedback/mới 1.png" alt="">
+                                <div class="testimonials-content">
+                                    <p></p>
+                                    <p>Thời gian này Tôi tập tành bán quần áo online trên facebook, lúc mới vừa kinh doanh Tôi loay hoay tìm đơn vị giao hàng giá thật rẻ mà tiền thu hộ phải về nhanh vì Tôi bán nhỏ lẻ cần tiền nhanh về để kịp nhập hàng. Bạn bè giới thiệu Tôi chọn sàn Topmove không cần cam kết số đơn hàng hay ký quỹ, đặc biệt hàng đi đến đâu tiền về đến đó.</p>
+                                    <p></p>
+                                    <h3>Chị An - Chủ Shop An An Boutique</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-wrap">
+                                <img src="http://adminsys.topmove.vn/uploads/feedback/mới 1.png" alt="">
+                                <div class="testimonials-content">
+                                    <p></p>
+                                    <p>Thời gian này Tôi tập tành bán quần áo online trên facebook, lúc mới vừa kinh doanh Tôi loay hoay tìm đơn vị giao hàng giá thật rẻ mà tiền thu hộ phải về nhanh vì Tôi bán nhỏ lẻ cần tiền nhanh về để kịp nhập hàng. Bạn bè giới thiệu Tôi chọn sàn Topmove không cần cam kết số đơn hàng hay ký quỹ, đặc biệt hàng đi đến đâu tiền về đến đó.</p>
+                                    <p></p>
+                                    <h3>Chị Hạnh - Chủ Shop An An Boutique</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-wrap">
+                                <img src="http://adminsys.topmove.vn/uploads/feedback/mới 1.png" alt="">
+                                <div class="testimonials-content">
+                                    <p></p>
+                                    <p>Thời gian này Tôi tập tành bán quần áo online trên facebook, lúc mới vừa kinh doanh Tôi loay hoay tìm đơn vị giao hàng giá thật rẻ mà tiền thu hộ phải về nhanh vì Tôi bán nhỏ lẻ cần tiền nhanh về để kịp nhập hàng. Bạn bè giới thiệu Tôi chọn sàn Topmove không cần cam kết số đơn hàng hay ký quỹ, đặc biệt hàng đi đến đâu tiền về đến đó.</p>
+                                    <p></p>
+                                    <h3>Chị Hạnh - Chủ Shop An An Boutique</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-wrap">
+                                <img src="http://adminsys.topmove.vn/uploads/feedback/mới 1.png" alt="">
+                                <div class="testimonials-content">
+                                    <p></p>
+                                    <p>Thời gian này Tôi tập tành bán quần áo online trên facebook, lúc mới vừa kinh doanh Tôi loay hoay tìm đơn vị giao hàng giá thật rẻ mà tiền thu hộ phải về nhanh vì Tôi bán nhỏ lẻ cần tiền nhanh về để kịp nhập hàng. Bạn bè giới thiệu Tôi chọn sàn Topmove không cần cam kết số đơn hàng hay ký quỹ, đặc biệt hàng đi đến đâu tiền về đến đó.</p>
+                                    <p></p>
+                                    <h3>Chị Hạnh - Chủ Shop An An Boutique</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand-area pt-70 pb-70">
+        </div>
+
+        <div class="tracking-number-area fun-blue-bg ptb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col l-6 "></div>
+                    <div class="col l-6 s-12">
+                        <div class="tracking-body ">
+                            <form action="" class="tracking-wrap">
+                                <input type="text" class="input-tracking font-1" placeholder="Nhập email để nhận tin mới từ chúng tôi">
+                                <button class="default-btn active font-1" type="submit" value="submit">Đăng ký</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col l-3 m-6 s-12">
+                        <div class="single-widget">
+                            <div style="margin-left: -25px; margin-top:-20px">
+                                <img src="./img/topmove.png" alt="" width="200">
+                            </div>
+                            <h3>TOPMOVE</h3>
+                            <p>Sàn vận chuyển giao hàng nhanh và thu hộ COD trên toàn quốc. Sự thấu hiểu khách hàng và đột phá về công nghệ, Topmove là cổng kết nối vận chuyển chuyên nghiệp và uy tín nhất hiện nay</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <div class="single-widget">
+                            <h3>LIÊN HỆ</h3>
+                            <p>
+                                Xóm chợ, Xã Trung Hòa,
+                                <br>
+                                Huyện Chương Mỹ,
+                                <br>
+                                Thành phố Hà Nội,
+                                <br>
+                                <br>
+                                CSKH: 0389676559 
+                                <br>
+                                <br>
+                                Email: contact@topmove.vn 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <div class="single-widget">
+                            <h3>CHÍNH SÁCH HỢP TÁC</h3>
+                            <ul>
+                                <li>
+                                    <a href="">Hợp tác SuperShip</a>
+                                </li>
+                                <li>
+                                    <a href="">Hợp tác GHTK</a>
+                                </li>
+                                <li>
+                                    <a href="">Hợp tác Giao Hàng Nhanh</a>
+                                </li>
+                                <li>
+                                    <a href="">Hợp tác Best Express</a>
+                                </li>
+                                <li>
+                                    <a href="">Chính Sách Bảo Mật Thông Tin</a>
+                                </li>
+                                <li>
+                                    <a href="">Chính sách khiếu nại và bồi thường</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <div class="single-widget">
+                            <h3>THƯ VIỆN</h3>
+                            <ul>
+                                <li>
+                                    <a href="">Giới thiệu TOPMOVE</a>
+                                </li>
+                                <li>
+                                    <a href="">Tra phí vận chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="">Hướng dẫn sử dụng</a>
+                                </li>
+                                <li>
+                                    <a href="">Kiến thức Doanh Nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="">Tin tức vận chuyên</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-bottom-area fun-blue-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col l-9 s-12">
+                        <div class="single-widget-bottom text-center" >
+                            <p>
+                                © 2020. CÔNG TY TNHH GIẢI PHÁP CÔNG NGHỆ K-SOFT VIỆT NAM
+                                <br>
+                                (K-SOFT VIETNAM TECHNOLOGY SOLUTIONS COMPANY LIMITED)
+                                <br>
+                                GPDKKD: 0108813473, cấp ngày 05/07/2019
+                                <br>
+                                Điện thoại: 038 967 6559. Email:
+                                contact@ksoft.ltd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col l-3 s-12">
+                        <a href="">
+                            <img src="./img/logoSaleNoti.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        // sticky header
+        var navbar = document.getElementById("desktop-nav");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+        window.onscroll = function() {myFunction()};
+
+        // tabs item
+        const tabList = document.querySelector(".choose-us-area_panel");
+        const tabs = document.querySelectorAll(".tabs-panel");
+        const articles = document.querySelectorAll(".tab_item");
+     
+        tabList.addEventListener('click', function(e) {
+            const id = e.target.dataset.id;
+      
+            if(e.target.dataset) {
+                tabs.forEach(function (tab) {
+                        tab.classList.remove('current');
+                        e.target.classList.add('current');
+                    });
+                    
+                articles.forEach(function (article) {
+                    article.classList.remove('current');
+                });
+
+                const element = document.getElementById(id);
+                element.classList.add('current');
+            }
+        })
+
+         // open menu 
+         const btnOpenMenu = document.querySelector("#menu-icon");
+        const btnCloseMenu = document.querySelector("#meanclose");
+        const meanBarMenu = document.querySelector(".mean-bar");
+
+        const btnOpenDropMenu = document.querySelector(".plus-icon");
+        const btnCloseDropMenu = document.querySelector(".minus-icon");
+
+        btnOpenMenu.addEventListener('click', ()=> {
+            btnOpenMenu.classList.toggle("active");
+            btnCloseMenu.classList.toggle("active");
+            meanBarMenu.classList.toggle("active");
+        })
+
+        btnCloseMenu.addEventListener('click', ()=> {
+            btnOpenMenu.classList.toggle("active");
+            btnCloseMenu.classList.toggle("active");
+            meanBarMenu.classList.toggle("active");
+        })
+
+        btnOpenDropMenu.addEventListener('click', ()=> {
+            btnCloseDropMenu.classList.toggle("active");
+            btnOpenDropMenu.classList.toggle("active");
+        })
+
+        btnCloseDropMenu.addEventListener('click', ()=> {
+            btnCloseDropMenu.classList.toggle("active");
+            btnOpenDropMenu.classList.toggle("active");
+        })
+
+        // slide testimonials-area 
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+       
+    </script>
+</body>
+</html>
