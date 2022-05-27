@@ -758,6 +758,11 @@ ul {
     color: transparent;
 }
 
+.owl-theme .owl-dots .owl-dot span {
+    width: 30px;
+    height: 5px;
+}
+
 /* tablet version */
 @media only screen and (max-width: 1161px) {
     .container {
