@@ -81,17 +81,18 @@
                                     <li class="nav-item">
                                         <a href="" class="nav-link">Tra Phí</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <input class="dropdowninput" type="checkbox" id="dropdownbox1"/>
+                                    <li class="nav-item dropdownbox">
                                         <div class="menudrop">
-                                            <a href="" class="nav-link">
-                                                HDSD
-                                            </a>
-                                            <div class="plus-icon active">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" fill="#fa4612"/></svg>
-                                            </div>
-                                            <div class="minus-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z" fill="#fa4612"/></svg>
-                                            </div>
+                                            <label for="dropdownbox1">
+                                                Hướng dẫn
+                                                <div class="plus-icon active">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" fill="#fa4612"/></svg>
+                                                </div>
+                                                <div class="minus-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z" fill="#fa4612"/></svg>
+                                                </div>
+                                            </label>
                                         </div>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item">
@@ -102,7 +103,29 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item">
+                                    <input class="dropdowninput" type="checkbox" id="dropdownbox2"/>
+                                    <li class="nav-item dropdownbox">
+                                        <div class="menudrop">
+                                            <label for="dropdownbox2"> 
+                                                Thông Tin Hữu Ích
+                                                <div class="plus-icon active">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" fill="#fa4612"/></svg>
+                                                </div>
+                                                <div class="minus-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="12px"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z" fill="#fa4612"/></svg>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="" class="nav-link">Kiến Thức DN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="" class="nav-link">Blog</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li class="nav-item">
                                         <div class="menudrop">
                                             <a href="" class="nav-link">
                                                 Thông Tin Hữu Ích
@@ -122,7 +145,7 @@
                                                 <a href="" class="nav-link">Blog</a>
                                             </li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <a href="" class="nav-link">Đăng nhập</a>
                                     </li>
@@ -644,6 +667,28 @@
         }
         window.onscroll = function() {myFunction()};
 
+        // slide testimonials-area 
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+       
+
         // tabs item
         const tabList = document.querySelector(".choose-us-area_panel");
         const tabs = document.querySelectorAll(".tabs-panel");
@@ -668,12 +713,9 @@
         })
 
          // open menu 
-         const btnOpenMenu = document.querySelector("#menu-icon");
+        const btnOpenMenu = document.querySelector("#menu-icon");
         const btnCloseMenu = document.querySelector("#meanclose");
         const meanBarMenu = document.querySelector(".mean-bar");
-
-        const btnOpenDropMenu = document.querySelector(".plus-icon");
-        const btnCloseDropMenu = document.querySelector(".minus-icon");
 
         btnOpenMenu.addEventListener('click', ()=> {
             btnOpenMenu.classList.toggle("active");
@@ -687,37 +729,25 @@
             meanBarMenu.classList.toggle("active");
         })
 
-        btnOpenDropMenu.addEventListener('click', ()=> {
-            btnCloseDropMenu.classList.toggle("active");
-            btnOpenDropMenu.classList.toggle("active");
-        })
+        const btnOpenDropMenu = document.querySelectorAll(".plus-icon");
+        const btnCloseDropMenu = document.querySelectorAll(".minus-icon");
 
-        btnCloseDropMenu.addEventListener('click', ()=> {
-            btnCloseDropMenu.classList.toggle("active");
-            btnOpenDropMenu.classList.toggle("active");
-        })
+        // console.log(btnOpenDropMenu);
 
-        // slide testimonials-area 
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:1
-                }
-            }
-        })
-       
+        // btnOpenDropMenu.addEventListener('click', ()=> {
+
+        //     btnOpenDropMenu.forEach(function (article) {
+        //             article.classList.toggle('active');
+        //         });
+          
+        // })
+
+        // btnCloseDropMenu.addEventListener('click', ()=> {
+        //     btnCloseDropMenu.classList.toggle("active");
+        //     btnOpenDropMenu.classList.toggle("active");
+        // })
+
+        
     </script>
 </body>
 </html>
